@@ -7,7 +7,7 @@ app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
 
-app.get(window.location.href + '/message', (req, res) => {
+app.get('/message', (req, res) => {
     const jsonData = {
         "message": "Welcome to my node server.",
         "user-ip": req.ip
