@@ -7,5 +7,11 @@ app.listen(3000, () => {
 });
 
 app.get('/message', (req, res) => {
-    res.send('Welcome to my Node.js server!');
+    const jsonData = {
+        "message": "Welcome to my node server.",
+        "user-ip": req.ip
+    };
+
+    //res.send('Welcome to my Node.js server!');
+    res.json(jsonData);
 });
