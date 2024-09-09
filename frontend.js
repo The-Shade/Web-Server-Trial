@@ -5,7 +5,7 @@ const xhr = new XMLHttpRequest();
 xhr.responseType = "json";
 
 button.onclick = () => {
-    xhr.open("GET", "http://localhost:3000/message", true);
+    xhr.open("GET", "/message", true);
     xhr.send();
 }
 
