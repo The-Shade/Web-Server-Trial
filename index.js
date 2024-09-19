@@ -12,7 +12,7 @@ app.get('/message', (req, res) => {
         "message": "Welcome to my node server.",
         "user-ip": req.ip
     };
-    console.log("1")
+    console.log("1");
 
     //res.send('Welcome to my Node.js server!');
     res.json(jsonData);
